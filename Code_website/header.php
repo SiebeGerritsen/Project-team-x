@@ -18,6 +18,7 @@
                 <li><a href="index.php">Home</a> </li>
                 <li><a href="overons.php">Over ons</a> </li>
                 <li><a href="contact.php">Contact</a> </li>
+                <li><a href="personalPage.php">Persoonlijke pagina</a> </li>
             </ul>
 
             <div class="nav-login">
