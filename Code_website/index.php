@@ -1,3 +1,7 @@
+<?php
+$page='index';
+?>
+
 <html>
 <head>
     <title>Gezinshuis</title>
@@ -23,15 +27,6 @@ include_once 'header.php';
 <?php
 include_once 'footer.php';
 ?>
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

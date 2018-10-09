@@ -1,3 +1,6 @@
+<?php
+$page='contact';
+?>
 <html>
 <head>
     <title>Gezinshuis</title>

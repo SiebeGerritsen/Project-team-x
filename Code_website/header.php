@@ -14,11 +14,21 @@
     <nav>
         <div class="main-wrapper">
             <ul>
-                <img class="logo" src="img/huis.jpg">
-                <li><a href="index.php">Home</a> </li>
-                <li><a href="overons.php">Over ons</a> </li>
-                <li><a href="contact.php">Contact</a> </li>
-                <li><a href="personalPage.php">Persoonlijke pagina</a> </li>
+                <img class="logo" src="../img/huis.jpg">
+                <?php if ($page == 'blog'||'agenda'){
+                ?>
+                    <li><a href="../index.php">Home</a> </li>
+                    <li><a href="../overons.php">Over ons</a> </li>
+                    <li><a href="../contact.php">Contact</a> </li>
+                    <li><a href='../personalPage.php'>Persoonlijke pagina</a> </li>
+                <?php } else {
+                ?>
+                    <li><a href="index.php">Home</a> </li>
+                    <li><a href="overons.php">Over ons</a> </li>
+                    <li><a href="contact.php">Contact</a> </li>
+                    <li><a href='personalPage.php'>Persoonlijke pagina</a> </li>
+                <?php } ?>
+
             </ul>
 
             <div class="nav-login">
