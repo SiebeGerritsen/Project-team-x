@@ -31,9 +31,32 @@ $page = 'blog'
 
             <div class="col-sm-8">
 
-                <h2>blog</h2>
-
                 <section class="latets-news-area">
+                    <div class="container" style="border: 1px solid black">
+                        <div class="row">
+                            <h1>blog</h1>
+                            <br>
+                            <div class="col-sm-12">
+                                <div class="container" style="width: 100%; background-color: dodgerblue">
+                                    <div class="section_subtitle">Blog</div>
+                                    <h2>Recente<strong> Blogs</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" style="width: 100%; background-color: grey; margin-top: 10px; margin-bottom: 10px">
+                            <div class="row">
+                                <div class="news-active">
+                                    <div class="col-md-12">
+
+                                        <?php
+                                        require_once 'controllers/blogPost.php'
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </section>
 

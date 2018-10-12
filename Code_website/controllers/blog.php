@@ -1,5 +1,7 @@
 <?php
 
+
+
 require 'views/blog.view.php';
 /**
 * Created by PhpStorm.

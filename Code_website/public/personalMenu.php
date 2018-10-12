@@ -30,8 +30,6 @@
                     <li class="nav-item"><a class="nav-link active" href="#"> Agenda</a> </li>
 
                 <?php } ?>
-
-
             </ul>
 
         </div>

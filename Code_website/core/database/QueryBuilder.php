@@ -21,11 +21,28 @@ class QueryBuilder
         return $statement->fetchALL(PDO::FETCH_CLASS);
     }
 
+    function getPublishedPosts()
+    {
+        /**
+         * @var $statement all data for given table
+         * @var $intoClass define class for output
+         */
+        $statement = $this->pdo->prepare("SELECT * FROM posts WHERE published=true");;
+        $statement->execute();
+
+        $posts = $statement->fetchALL(PDO::FETCH_ASSOC);
+        return $posts;
+
+    }
+
+
+
+/*
     public function query($currentDate){
         $statement = $this->pdo->prepare("SELECT title FROM events WHERE date = $currentDate AND status = 1");
         $statement->execute();
     }
-
+*/
 
 
 }
