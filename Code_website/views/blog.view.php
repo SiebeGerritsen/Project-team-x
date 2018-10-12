@@ -9,17 +9,12 @@ $page = 'blog'
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="public/css/calendar.css">
     </head>
 
-    <?php
-    /*met de include functie laad ik een stukje code in zodat ik het niet steeds opnieuwe hoef te typen*/
-    include_once 'partials/header.php';
 
-    ?>
-
-    <body>
+    <body class="bg">
 
 
     <div class="container-fluid" style="margin-top:30px">
@@ -38,10 +33,9 @@ $page = 'blog'
 
                 <h2>blog</h2>
 
-                <div class="container">
-                    <p> Hier komt de blog </p>
-                    <img class="mx-auto d-block" src="../public/img/huis.jpg"><br>
-                </div>
+                <section class="latets-news-area">
+
+                </section>
 
             </div>
         </div>

@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>webshop</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+
 <body>
 
-        <div class="container">
+        <div class="container" style="border: 1px solid black; height: 750px">
 
             <h3>Persoonlijke menu</h3>
 

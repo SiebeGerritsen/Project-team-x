@@ -2,25 +2,24 @@
 $page = 'agenda'
 ?>
 
-
-
     <!DOCTYPE html>
+
     <html lang="en">
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>PHP Event Calendar by CodexWorld</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="public/css/calendar.css">
-        <!-- Include the jQuery library -->
-        <script src="jquery.min.js"></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PHP Event Calendar by CodexWorld</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/calendar.css">
 
-    <?php
+</head>
+
+
+<?php
     /*met de include functie laad ik een stukje code in zodat ik het niet steeds opnieuwe hoef te typen*/
     include_once 'partials/header.php';
 
@@ -59,6 +58,9 @@ $page = 'agenda'
         </div>
     </div>
 
+    <?php
+    include_once 'partials/footer.php';
+    ?>
 
     </body>
 
