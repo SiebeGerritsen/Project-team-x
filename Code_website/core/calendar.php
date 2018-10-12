@@ -1,134 +1,94 @@
 <?php
+// Set your timezone
 date_default_timezone_set('CET');
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-class Calendar{
-    private $day;
-    private $month;
-    private $year;
-    private $days_of_week ;
-    private $num_days;
-    private $date_info;
-    private $day_of_week;
-
-        /* 
-        //
-        // data info gaan proberen variable startdatum of
-        // zoiets meegeven 
-        //
-        // functie alleen kalender maken
-        // aparte functie voor de te weertegeven datum
-        //        
-        */
-
-
-    public function __construct($day, $month, $year, $days_of_week = array('Zo.', 'Ma.', 'Di.', 'Wo.', 'Do.', 'Vri', 'Za.') ) {
-        
-        $this->day = $day;
-        $this->month = $month;
-        $this->year = $year;
-        $this->days_of_week = $days_of_week;
-        $this->num_days = cal_days_in_month(CAL_GREGORIAN, $this->month, $this->year);
-        $this->date_info = getdate(strtotime('first day of', mktime(0,0,0,$this->month,$this->day, $this->year)));
-        $this->day_of_week = $this->date_info['wday'];
-    
+// Get prev & next month
+if (isset($_GET['ym'])) {
+    $ym = $_GET['ym'];
+} else {
+    // This month
+    $ym = date('Y-m');
 }
+// Check format
+$timestamp = strtotime($ym . '-01');
+if ($timestamp === false) {
+    $ym = date('Y-m');
+    $timestamp = strtotime($ym . '-01');
+}
+// Today
+$today = date('Y-m-j', time());
+// For H3 title
+$html_title = date('Y / m', $timestamp);
+// Create prev & next month link     mktime(hour,minute,second,month,day,year)
+$prev = date('Y-m', mktime(0, 0, 0, date('m', $timestamp)-1, 1, date('Y', $timestamp)));
+$next = date('Y-m', mktime(0, 0, 0, date('m', $timestamp)+1, 1, date('Y', $timestamp)));
+// You can also use strtotime!
+// $prev = date('Y-m', strtotime('-1 month', $timestamp));
+// $next = date('Y-m', strtotime('+1 month', $timestamp));
+// Number of days in the month
+$day_count = date('t', $timestamp);
 
-public function show() {
+// 0:Sun 1:Mon 2:Tue ...
+$str = date('w', mktime(0, 0, 0, date('m', $timestamp), 1, date('Y', $timestamp)));
+//$str = date('w', $timestamp);
+// Create Calendar!!
+$weeks = array();
+$week = '';
+// Add empty cell
+$week .= str_repeat('<td></td>', $str);
+for ( $day = 1; $day <= $day_count; $day++, $str++) {
 
-    //month and year caption
-    $output = '<table class-"calender">';
-    $output .= '<caption>' .  $this->date_info['month'] . ' ' . $this->date_info['year'] . '</caption>';
-    $output .= '<tr>';
+    $date = $ym . '-' . $day;
 
-    // days of the week header
-    foreach ( $this->days_of_week as $day ) {
-        $output .= '<th class="header">' . $day . '</th>';
+    if ($today == $date) {
+        $week .= '<td class="today">' . $day;
+    } else {
+        $week .= '<td>' . $day;
     }
+    $week .= '</td>';
 
-    //close header row and open first row of days
-    $output .= '</tr><tr>';
-
-    //fulling gap until first day of the week
-    if ( $this->day_of_week > 0) {
-        $output .= '<td colspan="' . $this->day_of_week . '"></td>';
-    }
-
-    //start with days
-    $current_day = 1;
-
-    //loop and build days
-    while ($current_day <= $this->num_days){
-        //reset days
-        if( $this->day_of_week == 7 ) {
-            $this->day_of_week = 0;
-            $output .= '</tr><tr>';
+    // End of the week OR End of the month
+    if ($str % 7 == 6 || $day == $day_count) {
+        if ($day == $day_count) {
+            // Add empty cell
+            $week .= str_repeat('<td></td>', 6 - ($str % 7));
         }
-
-        // build each day cell
-        $output .= '<td class="day">' . $current_day . '</td>';
-
-        //increament counters
-        $current_day++;
-        $this->day_of_week++;
-        
+        $weeks[] = '<tr>' . $week . '</tr>';
+        // Prepare for new week
+        $week = '';
     }
-
-    //fill end of last week in month
-    if ( $this->day_of_week != 7){
-        $remaining_days = 7 - $this->day_of_week;
-        $output .= '<td colspan="' . $remaining_days . '"></td> ';
-    }
-
-    //close final row and table
-    $output .='</tr>';
-    $output .='</table>';
-
-    //output this
-    echo $output;
-
-}
-
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PHP Calendar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="public/calender.css">
+</head>
 
-<html>
- <!--
-    <head>
-        <script>
-            function goLastMonth(month,year){
-                if(month == 1) {
-                    //if the current 1, decrease the year and set month to 12
-                    --year;
-                    month = 12;
-                }
-                document.location.href = "<?php $_SERVER['PHP_SELF']; ?>?month="+month+"&year="+year;
-            }
-
-            function goNextMonth(month, year){
-                if(month == 12) {
-                    //if the current 12, increase the year and set month to 1
-                    ++year;
-                    month = 1;
-                }
-                
-                document.location.href = "<?php $_SERVER['PHP_SELF']; ?>?month="+month+"&year="+year;
-            }
-
-        </script>
-    </head>
-  -->
-
-    <div class="calendar">
-
+<body class="bg">
+<div class="container">
+    <h3><a href="?ym=<?php echo $prev; ?>">&lt;</a> <?php echo $html_title; ?> <a href="?ym=<?php echo $next; ?>">&gt;</a></h3>
+    <table class="table table-bordered">
+        <tr>
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
         <?php
-        
-        $calendar = new Calendar(9, 10, 2018);
-        $calendar->show();
-        
+        foreach ($weeks as $week) {
+            echo $week;
+        }
         ?>
+    </table>
+</div>
+</body>
 
-    </div>
-    
+
 </html>
