@@ -1,5 +1,5 @@
 <?php
-$page = 'agenda'
+$page = 'blog'
 ?>
 
     <!DOCTYPE html>
@@ -10,15 +10,12 @@ $page = 'agenda'
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     </head>
 
     <?php
     /*met de include functie laad ik een stukje code in zodat ik het niet steeds opnieuwe hoef te typen*/
-    include_once '../header.php';
+    include_once 'partials/header.php';
 
     ?>
 
@@ -31,7 +28,7 @@ $page = 'agenda'
             <div class="col-sm-4">
 
                 <?php
-                include_once 'personalMenu.php';
+                include_once 'public/personalMenu.php';
                 ?>
 
                 <hr class="d-sm-none">
@@ -39,26 +36,27 @@ $page = 'agenda'
 
             <div class="col-sm-8">
 
-                <h2>Persoonlijke pagina</h2>
+                <h2>blog</h2>
 
-                <div class="agenda">
-                    <p id="welkom"> Hier komt de agenda</p>
-                    <img class="mx-auto d-block" src="../img/huis.jpg"><br>
+                <div class="container">
+                    <p> Hier komt de blog </p>
+                    <img class="mx-auto d-block" src="../public/img/huis.jpg"><br>
                 </div>
 
             </div>
         </div>
     </div>
-
-
     </body>
 
+    <?php
+    include_once 'partials/footer.php';
+    ?>
 
     </html>
 <?php
 /**
  * Created by PhpStorm.
  * User: Siebe
- * Date: 10-10-2018
- * Time: 00:15
+ * Date: 11-10-2018
+ * Time: 21:13
  */

@@ -6,7 +6,7 @@
     <html>
     <head>
         <title>webshop</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
     </head>
 <body>
 
@@ -14,20 +14,11 @@
     <nav>
         <div class="main-wrapper">
             <ul>
-                <img class="logo" src="../img/huis.jpg">
-                <?php if ($page == 'blog'||'agenda'){
-                ?>
-                    <li><a href="../index.php">Home</a> </li>
-                    <li><a href="../overons.php">Over ons</a> </li>
-                    <li><a href="../contact.php">Contact</a> </li>
-                    <li><a href='../personalPage.php'>Persoonlijke pagina</a> </li>
-                <?php } else {
-                ?>
-                    <li><a href="index.php">Home</a> </li>
-                    <li><a href="overons.php">Over ons</a> </li>
-                    <li><a href="contact.php">Contact</a> </li>
-                    <li><a href='personalPage.php'>Persoonlijke pagina</a> </li>
-                <?php } ?>
+                <img class="logo" src="../public/img/huis.jpg">
+                <li><a href="home">Home</a> </li>
+                <li><a href="overons">Over ons</a> </li>
+                <li><a href="contact">Contact</a> </li>
+                <li><a href="personalPage">Persoonlijke pagina</a> </li>
 
             </ul>
 

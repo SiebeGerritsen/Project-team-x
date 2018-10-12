@@ -358,5 +358,8 @@ sidebar ul{
 
 }
 
-/* bootstrap */
-
+.container{
+    margin-top: 60px;
+    width: auto;
+    font-family: Arial;
+}
