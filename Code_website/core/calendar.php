@@ -69,7 +69,7 @@ for ( $day = 1; $day <= $day_count; $day++, $str++) {
 </head>
 
 <body class="bg">
-<div class="container">
+<div class="container"  class="bg">
     <h3><a href="?ym=<?php echo $prev; ?>">&lt;</a> <?php echo $html_title; ?> <a href="?ym=<?php echo $next; ?>">&gt;</a></h3>
     <table class="table table-bordered">
         <tr>

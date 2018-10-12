@@ -14,7 +14,7 @@ $page = 'agenda'
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="public/css/calendar.css">
         <!-- Include the jQuery library -->
         <script src="jquery.min.js"></script>
 
@@ -47,10 +47,9 @@ $page = 'agenda'
 
                 <div class="container">
 
-                    <!-- Display event calendar -->
-                    <div id="calendar_div">
-                        <?php echo getCalender(); ?>
-                    </div>
+                        <?php
+                        include_once 'core/calendar.php';
+                        ?>
 
                 </div>
 
