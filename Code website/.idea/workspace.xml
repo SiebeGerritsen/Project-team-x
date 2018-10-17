@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e52bb17-1260-4ae9-82d1-e0fcee94a260" name="Default" comment="navigatie en bootstrap werkend">
-      <change afterPath="$PROJECT_DIR$/controllers/blogPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/BlogPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/database/QueryBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/personalMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/personalMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/blog.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog.view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,10 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/personalMenu.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="340">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -171,37 +164,56 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="940" />
-    <option name="width" value="987" />
-    <option name="height" value="1047" />
+    <option name="width" value="988" />
+    <option name="height" value="1048" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Code_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code_website" type="462c0819:PsiDirectoryNode" />
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Code_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code_website" type="462c0819:PsiDirectoryNode" />
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Code_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code_website" type="462c0819:PsiDirectoryNode" />
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,7 +285,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66108000" />
+    <option name="totallyTimeSpent" value="66259000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,10 +297,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="940" y="0" width="987" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13892618" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
@@ -466,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-          <folding>
-            <element signature="e#6#41#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -493,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -518,10 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="45" column="122" selection-start-line="45" selection-start-column="122" selection-end-line="45" selection-end-column="122" />
-          <folding>
-            <element signature="e#965#996#0#HTML" expanded="true" />
-            <element signature="e#1222#1271#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -571,6 +568,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>
