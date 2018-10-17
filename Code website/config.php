@@ -2,7 +2,7 @@
 
 return[
     'database'=> [
-        'name' => 'events',
+        'name' => 'gasthuis',
         'username' => 'root',
         'password' => 'hallo531',
         'connection' => 'mysql:host=127.0.0.1',

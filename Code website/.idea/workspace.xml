@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e52bb17-1260-4ae9-82d1-e0fcee94a260" name="Default" comment="navigatie en bootstrap werkend">
-      <change afterPath="$PROJECT_DIR$/controllers/blogPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/BlogPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/database/QueryBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/personalMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/personalMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/blog.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,14 +63,78 @@
       <usages-collector id="statistics.php.composer.command.options" />
       <usages-collector id="statistics.php.composer.actions" />
     </session>
+    <session id="-302236485">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="18" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/personalMenu.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/blogPost.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/personalPage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/blog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -128,7 +186,6 @@
         <option value="$PROJECT_DIR$/views/index.view.php" />
         <option value="$PROJECT_DIR$/views/contact.view.php" />
         <option value="$PROJECT_DIR$/views/overons.view.php" />
-        <option value="$PROJECT_DIR$/views/partials/header.php" />
         <option value="$PROJECT_DIR$/personal/personalMenu.php" />
         <option value="$PROJECT_DIR$/core/Calendar2.php" />
         <option value="$PROJECT_DIR$/controllers/calendar.php" />
@@ -156,6 +213,7 @@
         <option value="$PROJECT_DIR$/controllers/blogPost.php" />
         <option value="$PROJECT_DIR$/views/blog.view.php" />
         <option value="$PROJECT_DIR$/public/personalMenu.php" />
+        <option value="$PROJECT_DIR$/views/partials/header.php" />
       </list>
     </option>
   </component>
@@ -169,10 +227,10 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="940" />
-    <option name="width" value="987" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -184,17 +242,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="Code_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code_website" type="462c0819:PsiDirectoryNode" />
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Code_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code_website" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Code_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code_website" type="462c0819:PsiDirectoryNode" />
+              <item name="Code website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code website" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -254,6 +312,7 @@
       <workItem from="1539301092144" duration="5245000" />
       <workItem from="1539327118833" duration="17643000" />
       <workItem from="1539345711800" duration="15207000" />
+      <workItem from="1539777682203" duration="569000" />
     </task>
     <task id="LOCAL-00001" summary="navigatie en bootstrap werkend">
       <created>1539128620314</created>
@@ -273,7 +332,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66108000" />
+    <option name="totallyTimeSpent" value="66677000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,17 +344,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="940" y="0" width="987" height="1047" extended-state="0" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2635229" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32858709" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49946696" weight="0.33187294" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49946696" visible="true" weight="0.33142036" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
       <window_info anchor="bottom" id="Message" order="7" />
@@ -384,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/personalPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Calendar2.php" />
     <entry file="file://$PROJECT_DIR$/core/events/events.js" />
     <entry file="file://$PROJECT_DIR$/core/events/event.php" />
@@ -423,13 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -466,9 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-          <folding>
-            <element signature="e#6#41#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -518,17 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="45" column="122" selection-start-line="45" selection-start-column="122" selection-end-line="45" selection-end-column="122" />
-          <folding>
-            <element signature="e#965#996#0#HTML" expanded="true" />
-            <element signature="e#1222#1271#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/blogPost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -553,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/database/QueryBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -571,6 +595,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/blogPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/personalPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="8" />
         </state>
       </provider>
     </entry>
