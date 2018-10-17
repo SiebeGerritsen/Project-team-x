@@ -233,10 +233,11 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="940" />
-    <option name="width" value="988" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="998" />
+    <option name="y" value="252" />
+    <option name="width" value="989" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -295,7 +296,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Code_website" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Code_website" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.vagrant" />
@@ -477,7 +478,7 @@
     <entry file="file://$PROJECT_DIR$/core/Calendar2.php" />
     <entry file="file://$PROJECT_DIR$/core/events/events.js" />
     <entry file="file://$PROJECT_DIR$/core/events/event.php" />
-    <entry file="file://$USER_HOME$/Desktop/create-event-calendar-with-jquery-php-and-mysql/js/calendar.min.js" />
+    <entry file="file://$PROJECT_DIR$/../../../create-event-calendar-with-jquery-php-and-mysql/js/calendar.min.js" />
     <entry file="file://$PROJECT_DIR$/views/calendar.view.php" />
     <entry file="file://$PROJECT_DIR$/core/jquery.min.js" />
     <entry file="file://$PROJECT_DIR$/core/functions.php" />
