@@ -27,7 +27,7 @@ class QueryBuilder
          * @var $statement all data for given table
          * @var $intoClass define class for output
          */
-        $statement = $this->pdo->prepare("SELECT * FROM posts WHERE published=true");;
+        $statement = $this->pdo->prepare("SELECT * FROM day2dayinformation");;
         $statement->execute();
 
         $posts = $statement->fetchALL(PDO::FETCH_ASSOC);

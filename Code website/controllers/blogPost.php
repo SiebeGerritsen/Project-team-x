@@ -6,21 +6,21 @@
 $posts = $result;
 
 
-foreach ($posts as $post): ?>
 
-<li class="col-xs-12">
+foreach ($posts as $post) {
+    if($post['idkid'] == 2){
 
-        <a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
-            <div class="post_info">
-                <h3><?php echo $post['title'] ?></h3>
-                <div class="info">
-                    <span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
-                    <span class="read_more">Read more...</span>
-                </div>
+        ?>
+        <li class="col-xs-12">
+
+            <div class="container">
+                <?php echo $post['description'] ?>
             </div>
-</li>
 
-<?php
-endforeach
-?>
+        </li>
+        <?php
+    }
+
+}
+ ?>
 
