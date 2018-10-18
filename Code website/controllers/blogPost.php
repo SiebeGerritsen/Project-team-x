@@ -13,7 +13,7 @@ foreach ($posts as $post) {
         ?>
         <li class="col-xs-12">
 
-            <div class="container">
+            <div class="container" style="margin-top: 0px;">
                 <?php echo $post['description'] ?>
             </div>
 

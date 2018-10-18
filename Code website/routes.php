@@ -13,6 +13,9 @@ $router->get('agenda', 'controllers/agenda.php');
 $router->get('calendar', 'core/functions.php');
 
 
+//post
+$router->post('add_comment', 'controllers/add_comment.php');
+
 
 
 

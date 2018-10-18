@@ -60,6 +60,15 @@ $page = 'blog'
 
                 </section>
 
+                <div class="container" style="border: 1px solid black">
+                    <form method="post" action="/add_comment">
+                        <div class="form-group">
+                            <label for="comment"> Dagbericht </label>
+                            <input type="text" name="description"></input>
+                            <button type="submit"> Opslaan </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
