@@ -11,10 +11,12 @@ $router->get('personalPage', 'controllers/personalPage.php');
 $router->get('blog', 'controllers/blog.php');
 $router->get('agenda', 'controllers/agenda.php');
 $router->get('calendar', 'core/functions.php');
+$router->get('contactToevoegen', 'controllers/contactToevoegen.php');
 
 
 //post
 $router->post('add_comment', 'controllers/add_comment.php');
+$router->post('contactToevoegen', 'controllers/contactToevoegen.php');
 
 
 

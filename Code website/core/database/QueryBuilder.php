@@ -35,6 +35,14 @@ class QueryBuilder
 
     }
 
+    public function insertContactInformation($data)
+    {
+    $statement = $this->pdo->prepare("INSERT INTO `gasthuis`.`contactform` (`fname`, `lname`, `email`, `vraag`) VALUES
+          ('{$data['fname']}', '{$data['lname']}', '{$data['email']}', '{$data['vraag']}'); ");
+    $statement->execute();
+    return $statement->errorInfo(); }
+   
+
     public function insertDescription($data)
     {
         $statement = $this->pdo->prepare("INSERT INTO `gasthuis` . `day2dayinformation` (`description`)
@@ -44,7 +52,7 @@ class QueryBuilder
         return $statement->errorInfo();
     }
 
-
+ }
 
 
 /*
@@ -55,7 +63,7 @@ class QueryBuilder
 */
 
 
-}
+
 
 /**
  * Created by PhpStorm.
