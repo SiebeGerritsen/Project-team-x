@@ -14,37 +14,28 @@ $page = 'agenda'
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/calendar.css">
 
 </head>
 
 
-<?php
-    /*met de include functie laad ik een stukje code in zodat ik het niet steeds opnieuwe hoef te typen*/
-    include_once 'partials/header.php';
-
-    ?>
-
-    <body>
 
 
-    <div class="container-fluid" style="margin-top:30px">
-        <div class="row">
+<body>
 
-            <div class="col-sm-4">
+<div class="container-fluid" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-4">
+            <?php
+            include_once 'public/personalMenu.php';
+            ?>
 
-                <?php
-                include_once 'public/personalMenu.php';
-                ?>
-
-                <hr class="d-sm-none">
-            </div>
+        </div>
 
             <div class="col-sm-8">
 
-                <h2>Persoonlijke pagina</h2>
+                <h2>Agenda</h2>
 
-                <div class="container">
+                <div class="container" style="border: 1px solid black">
 
                         <?php
                         include_once 'core/calendar.php';

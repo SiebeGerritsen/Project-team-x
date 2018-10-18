@@ -1,12 +1,6 @@
 <?php
 
-
-$description = filter_input(INPUT_POST, 'description');
-if (!empty($description)){
-    var_dump($app['database']);
-} else {
-    echo "comment moet niet leeg zijn";
-}
+$results = $app['database']->insertDescription($_POST);
 
 /**
  * Created by PhpStorm.

@@ -10,7 +10,7 @@ $page='index';
 
 <?php
 /*met de include functie laad ik een stukje code in zodat ik het niet steeds opnieuwe hoef te typen*/
-include_once 'partials/header.php';
+include 'partials/header.php';
 
 ?>
 

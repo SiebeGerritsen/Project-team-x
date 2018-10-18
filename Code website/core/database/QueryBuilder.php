@@ -35,6 +35,16 @@ class QueryBuilder
 
     }
 
+    public function insertDescription($data)
+    {
+        $statement = $this->pdo->prepare("INSERT INTO `gasthuis` . `day2dayinformation` (`description`)
+                                                    VALUES ('{$data['description']}')");
+        $statement->execute();
+
+        return $statement->errorInfo();
+    }
+
+
 
 
 /*

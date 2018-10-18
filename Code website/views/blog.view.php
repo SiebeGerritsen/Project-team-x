@@ -10,14 +10,14 @@ $page = 'blog'
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="public/css/calendar.css">
+
     </head>
 
 
-    <body class="bg">
+    <body>
 
 
-    <div class="container-fluid" style="margin-top:30px">
+    <div class="container-fluid">
         <div class="row">
 
             <div class="col-sm-4">
@@ -61,11 +61,11 @@ $page = 'blog'
                 </section>
 
                 <div class="container" style="border: 1px solid black">
-                    <form method="post" action="/add_comment">
+
+                    <form action="/add_comment" method="post" >
                         <div class="form-group">
-                            <label for="comment"> Dagbericht </label>
-                            <input type="text" name="description"></input>
-                            <button type="submit"> Opslaan </button>
+                            <p>dag Bericht <input type="text" name="description"></p>
+                            <input type="submit" value="Opslaan"/>
                         </div>
                     </form>
                 </div>

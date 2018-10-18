@@ -61,9 +61,10 @@ for ( $day = 1; $day <= $day_count; $day++, $str++) {
 <!DOCTYPE html>
 <html lang="en">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="public/css/calendar.css">
-<body class="bg">
+<link rel="stylesheet" href="public/css/custom.css">
+
+<body>
 <div class="container">
     <h3><a href="?ym=<?php echo $prev; ?>">&lt;</a> <?php echo $html_title; ?> <a href="?ym=<?php echo $next; ?>">&gt;</a></h3>
     <table class="table table-bordered">

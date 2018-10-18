@@ -3,7 +3,7 @@
 
 <body>
 
-        <div class="container" style="border: 1px solid black; height: 750px">
+<div class="container" style="border: 1px solid black; height: 750px">
 
             <h3>Persoonlijke menu</h3>
 
@@ -31,8 +31,8 @@
 
                 <?php } ?>
             </ul>
+</div>
 
-        </div>
 
 </body>
 <?php
