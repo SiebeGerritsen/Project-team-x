@@ -9,6 +9,8 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
+                        /* SELECT FROM*/
+
     public function selectAll($table)
     {
         /**
@@ -27,13 +29,24 @@ class QueryBuilder
          * @var $statement all data for given table
          * @var $intoClass define class for output
          */
-        $statement = $this->pdo->prepare("SELECT * FROM day2dayinformation");;
+        $statement = $this->pdo->prepare("SELECT * FROM day2dayinformation");
         $statement->execute();
 
         $posts = $statement->fetchALL(PDO::FETCH_ASSOC);
         return $posts;
 
     }
+
+    function getProfileKids(){
+        $statement = $this->pdo->prepare("SELECT * FROM profiles_kids");
+        $statement->execute();
+
+        $idKid = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $idKid;
+    }
+
+
+                             /* INSERT INTO */
 
     public function insertContactInformation($data)
     {
@@ -45,12 +58,14 @@ class QueryBuilder
 
     public function insertDescription($data)
     {
-        $statement = $this->pdo->prepare("INSERT INTO `gasthuis` . `day2dayinformation` (`description`)
-                                                    VALUES ('{$data['description']}')");
+        $statement = $this->pdo->prepare("INSERT INTO `gasthuis` . `day2dayinformation` (`description`, `idkid`)
+                                                    VALUES ('{$data['description']}','{$data['idkid']}')");
         $statement->execute();
 
         return $statement->errorInfo();
     }
+
+
 
  }
 

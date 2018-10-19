@@ -9,8 +9,16 @@ $page = 'blog'
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </head>
 
 
@@ -34,20 +42,33 @@ $page = 'blog'
                 <section class="latets-news-area">
                     <div class="container" style="border: 1px solid black">
                         <div class="row">
-                            <h1>blog</h1>
-                            <br>
+                            <div class="col">
+                                <div class="container">
+                                    <h1>blog</h1>
+                                    <br>
+                                    <!--select list-->
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                            Dropdown button
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <?php require 'controllers/choseChild.php'?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
                             <div class="col-sm-12">
-                                <div class="container" style="width: 100%; background-color: dodgerblue">
-                                    <div class="section_subtitle">Blog</div>
-                                    <h2>Recente<strong> Blogs</strong></h2>
+                                <div class="container" style="width: 100%; margin-top: 20px; background-color: dodgerblue">
+                                    <h2>Recente dag berichten</h2>
                                 </div>
                             </div>
                         </div>
+
                         <div class="container" style="width: 100%; background-color: grey; margin-top: 10px; margin-bottom: 10px">
                             <div class="row">
                                 <div class="news-active">
                                     <div class="col-md-12">
-
                                         <?php
                                         require_once 'controllers/blogPost.php'
                                         ?>
@@ -64,7 +85,12 @@ $page = 'blog'
 
                     <form action="/add_comment" method="post" >
                         <div class="form-group">
-                            <p>dag Bericht <input type="text" name="description"></p>
+                            <label for="sel1"> Kies idkid: </label>
+                            <select class="form-control" id="sel1" name="idkid">
+                                <?php require 'controllers/add_comment.php'?>
+                            </select>
+
+                            <p>Dag Bericht: <input type="text" name="description"></p>
                             <input type="submit" value="Opslaan"/>
                         </div>
                     </form>
@@ -72,6 +98,7 @@ $page = 'blog'
             </div>
         </div>
     </div>
+
     </body>
 
     <?php

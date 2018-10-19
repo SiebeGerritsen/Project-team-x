@@ -1,12 +1,12 @@
 <?php require_once('core/bootstrap.php'); ?>
 
+
+
     <!-- Retrieve all posts from database  -->
 <?php $result = $app['database']->getPublishedPosts();
 
+
 $posts = $result;
-
-
-
 foreach ($posts as $post) {
     if($post['idkid'] == 2){
 
@@ -20,7 +20,8 @@ foreach ($posts as $post) {
         </li>
         <?php
     }
-
 }
+
+
  ?>
 
